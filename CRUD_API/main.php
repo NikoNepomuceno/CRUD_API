@@ -50,7 +50,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
     case 'DELETE':
         if ($req[0] == 'deleteUser' && isset($req[1])) {
-            $userId = $req[1]; // Assume user ID is in the second part of the request
+            $userId = $req[1]; 
             echo json_encode($try->deleteUser($userId));
             return;
         }
